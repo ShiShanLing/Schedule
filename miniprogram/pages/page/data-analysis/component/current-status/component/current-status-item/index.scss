@@ -1,0 +1,33 @@
+/* pages/page/data-analysis/component/current-status/component/current-status-item/index.wxss */
+
+.item-box{
+	width: auto;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	.des{
+		height: 10px;
+			color: white;
+			font-size: 12px;
+	}
+	.data-text-box{
+		margin-top: 10px;
+		display: flex;
+		flex-direction: row;
+		.data{
+			color: white;
+			font-size: 25px;
+			font-weight: 800;
+		}
+		.unit{
+			// background-color: yellow;
+			margin-left: 4px;
+			margin-top: 15px;
+			height: 10px;
+			color: white;
+			font-size: 12px;
+		}
+	}
+
+}

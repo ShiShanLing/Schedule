@@ -1,0 +1,7 @@
+<!--pages/page/data-analysis/index.wxml-->
+
+<view class="container-box">
+  <current-status></current-status>
+<direction></direction>
+<wxexercise></wxexercise>
+</view>

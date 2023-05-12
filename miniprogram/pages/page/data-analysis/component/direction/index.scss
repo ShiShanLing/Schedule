@@ -1,0 +1,35 @@
+/* pages/page/data-analysis/component/direction/index.wxss */
+
+.container-box{
+	width: auto;
+	height: 200px;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 15px 25px;
+	box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.f2-canvas{
+	width: 100%;
+	height: 150px;
+	background-color: yellow;
+}
+
+
+.title-text{
+	width: auto;
+	color: black;
+	font-size: 14px;
+}
+.f2-chart {
+	width: 100%;
+	height: 500rpx;
+}

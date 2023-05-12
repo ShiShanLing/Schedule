@@ -1,0 +1,10 @@
+<!--pages/page/data-analysis/component/current-status/component/current-status-item/index.wxml-->
+<view class="item-box">
+		<view class="des">
+		{{des}}
+		</view>
+		<view class="data-text-box">
+			<view class="data">{{dataStr}}</view>
+			<view class="unit">{{unit}}</view>
+		</view>
+	</view>

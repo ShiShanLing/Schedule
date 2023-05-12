@@ -1,0 +1,20 @@
+<!--pages/page/record/index.wxml-->
+
+<view class="container-box">
+
+  <!-- isEditable:String,
+    titleStr:String,
+    desStr:String,
+    weight:Number, -->
+
+  <record-add-card isEditable="{{!isWakeUpSave}}" titleStr="早起空腹" desStr="选择体重" weight="{{wakeUpWeight}}" type="0" bind:selectData="selectData" bind:submit='submit'>
+  </record-add-card>
+
+  <record-add-card isEditable="{{!isBeforeSleepSave}}" titleStr="睡前" desStr="选择体重" weight="{{beforeSleepWeight}}" type="1" bind:selectData="selectData" bind:submit='submit'></record-add-card>
+
+
+  <van-popup show="{{ show }}" position="bottom" custom-style="height: 50%" bind:close="onClose">
+    <van-picker columns="{{ columns }}" show-toolbar title="{{currentSelectType==0 ? '早起空腹':'睡前'}}" bind:change="onChange" bind:cancel="onCancel" bind:confirm="onConfirm" />
+  </van-popup>
+</view>
+<van-toast id="van-toast" />

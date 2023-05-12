@@ -1,0 +1,11 @@
+{
+	"component": true,
+	"usingComponents": {
+    "record-add-card":"./Component/record-add-card/index",
+    "van-area": "@vant/weapp/area/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-toast": "@vant/weapp/toast/index"
+  },
+  "backgroundColor": "#f2f2f2"
+}

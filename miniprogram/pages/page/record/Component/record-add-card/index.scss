@@ -1,0 +1,56 @@
+/* pages/page/record/Component/record-add-card/index.wxss */
+
+.card-box{
+  padding: 15px;
+  box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+  border-radius: 5px;;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+.title{
+  font-size: 13px;
+  
+}
+
+.select-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  .des{
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .showText{
+    margin-left: 10px;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .indicatorIcon{
+    margin-left: 10px;
+    
+    width: 10px;
+    height: 10px;
+  }
+}
+//记录button
+.submitButton{
+  height: 30px;
+  line-height: 32px;
+  font-size: 15px;
+  background-color: blue;
+  width: 100px;
+  border-radius: 15px;
+  color: white;
+  box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 0px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.notEditable{
+  background-color: rgb(122, 122, 122);
+}

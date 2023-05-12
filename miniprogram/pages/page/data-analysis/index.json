@@ -1,0 +1,10 @@
+{
+	"component": true,
+	"usingComponents": {
+		"current-status":"./component/current-status/index",
+		"direction":"./component/direction/index",
+		"wxexercise":"./component/wxexercise/index"
+	
+  },
+  "backgroundColor": "#f2f2f2"
+}

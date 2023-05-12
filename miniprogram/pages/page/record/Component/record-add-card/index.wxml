@@ -1,0 +1,15 @@
+<!--pages/page/record/Component/record-add-card/index.wxml-->
+
+<view class="card-box">
+  <view class="title" >{{titleStr}}</view>
+  <view class="select-box" mut-bind:tap="selectData">
+    <view class="des">{{desStr}}:</view>
+    <view class="showText">{{weight}} kg</view>
+    <!-- arrow-up -->
+    <van-icon class="indicatorIcon" name="arrow-down"/>
+    
+    <button wx:if="{{isEditable == 'true'}}" class="submitButton" mut-bind:tap="submit">提交记录</button>
+    <button wx:else class="submitButton notEditable">提交记录</button>
+
+  </view>
+</view>

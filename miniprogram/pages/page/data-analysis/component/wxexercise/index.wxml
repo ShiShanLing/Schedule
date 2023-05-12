@@ -1,0 +1,12 @@
+<!--pages/page/data-analysis/component/wx-exercise/index.wxml-->
+
+<view wx:if="{{!stepisGetFail}}" class="container-box">
+  
+  <ec-canvas wx:if="{{isLoadData}}" id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  <ec-canvas wx:else id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  
+</view>
+<view wx:else class="container-box container-box-auto">
+  <text class="errorText">微信运动数据获取失败,您可能未开启微信运动或者手机不支持!</text>
+</view>
+<van-toast id="van-toast" />

@@ -1,0 +1,6 @@
+{
+	"component": true,
+	"usingComponents": {
+		"status-item":"./component/current-status-item/index"
+	}
+}

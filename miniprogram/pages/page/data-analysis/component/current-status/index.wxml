@@ -1,0 +1,12 @@
+<!--pages/page/data-analysis/component/current-status/index.wxml-->
+<view class="container-box">
+	<text class="title-text">当前状况</text>
+	<view class="centent-box">
+		<status-item des="当前体重" dataStr="{{currentWeigth}}" unit="kg"></
+		status-item>
+		<view class="space"></view>
+		<status-item des="比减少" dataStr="{{loseWeigth}}" unit="kg"></status-item>
+		<view class="space"></view>
+		<status-item des="已坚持" dataStr="{{keepDays}}" unit="天"></status-item>
+	</view>
+</view>

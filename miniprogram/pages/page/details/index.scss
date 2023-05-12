@@ -1,0 +1,95 @@
+/* pages/page/details/index.wxss */
+.container-box{
+  background-color: rgb(242, 242, 242);
+  height: auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card-box{
+	width: auto;
+	
+	border-radius: 3px;
+	padding: 10px;
+  margin: 15px 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+	box-shadow:  0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	display: flex;
+  flex-direction: column;
+  
+  .tips{
+    text-align: center;
+    color: rgb(142, 142, 142);
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+}
+
+.cell-box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  box-sizing: border-box;
+  .time{
+    
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .weigth-box{
+    flex: 1;
+    
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    align-items: center;
+    .fasting-icon{
+      color: white;
+      height: 22px;
+      padding: 2px 4px;
+      border-radius: 3px; 
+      background-color: orange;
+      font-size: 17px;
+    }
+    .fasting{
+      width: 50px;
+      color: rgb(142, 142, 142);
+      font-size: 14px;
+      padding: 10px 3px;
+      
+  
+    }
+    .beforeSleep-icon{
+      width: auto;
+      height: 22px;
+      color: white;
+      padding: 2px 4px;
+      border-radius: 3px; 
+      background-color: orange;
+      font-size: 17px;
+      
+    }
+    .beforeSleep{
+      width: 50px;
+      color: rgb(142, 142, 142);
+      font-size: 14px;
+      padding: 10px 3px;
+      
+    }
+  }
+
+  //
+ 
+}

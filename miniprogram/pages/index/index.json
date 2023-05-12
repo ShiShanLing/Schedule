@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+		"van-tabbar":"@vant/weapp/tabbar/index",
+		"van-tabbar-item":"@vant/weapp/tabbar-item/index",
+		"app-data-analysis":"../page/data-analysis/index",
+		"app-record":"../page/record/index",
+		"app-details":"../page/details/index"
+  },
+  "backgroundColor": "#f2f2f2"
+	
+}

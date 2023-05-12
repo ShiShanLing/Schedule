@@ -1,0 +1,17 @@
+<!--pages/page/details/index.wxml-->
+
+<view class="container-box">
+  <view class="card-box">
+  <text class="tips">如果数据为0,可能是因为您忘记/还未填写.</text>
+    <view wx:for="{{weigthList}}" wx:key="index" wx:for-item="item" class="cell-box">
+      <view class="time">{{item.dateStr}}</view>
+      <view class="weigth-box">
+        <view class="beforeSleep">{{item.beforeSleepWeight}}kg</view>
+        <view class="beforeSleep-icon">睡前</view>
+        <view class="fasting">{{item.wakeUpWeight}}kg</view>
+        <view class="fasting-icon">空腹</view>
+      </view>
+    </view>
+  </view>
+  <!-- <button capture-bind:tap="clickFunc">重置数据</button> -->
+</view>
