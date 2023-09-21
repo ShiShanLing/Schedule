@@ -3,11 +3,6 @@
 import {dateFormat} from '../../../tools/date-tools';
 import {changeWeightData, queryWeightData, addTodayWeightData} from '../../Services/weight-data';
 import Toast from '../../../miniprogram_npm/@vant/weapp/toast/toast';
-
-const citys = {
-  浙江: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
-  福建: ['福州', '厦门', '莆田', '三明', '泉州'],
-};
 const data1 = ["30", "40", "50", "60", "70", "80", "90", "100", "110", "120", "130", "140", "150", "160", "170", "180", "190", "200"]
 const data2 = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ]
 const data3 = ["0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", ]
@@ -91,9 +86,9 @@ Component({
   
       let result = queryWeightData(dateFormat(new Date(), "MM-DD"));
       if (result.length == 0){
+        
         Toast.fail({message:"请选择体重后再提交!", context:this});
         console.log("error");
-        
           return;
       }
       let weightModel = result[0];
@@ -115,9 +110,16 @@ Component({
         this.setData({
           isBeforeSleepSave:true,
         })
+        
       }
       changeWeightData(weightModel);
+      /*
+
       
+
+
+
+      */
     },
     onClosePopup(){
       this.setData({

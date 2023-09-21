@@ -3,5 +3,5 @@
 <view class="container-box">
   <current-status></current-status>
 <direction></direction>
-<wxexercise></wxexercise>
+<!-- <wxexercise></wxexercise> -->
 </view>

@@ -50,11 +50,8 @@ Component({
               }else{
                 session_key = res.result.session_key;
               }
-            
               console.log("res type==", (typeof res));
-              
               console.log("session_key==", session_key);
-              
               if (session_key) {
                 weakThis.getWXyundong(session_key);
               }
@@ -63,12 +60,10 @@ Component({
               console.log("云函数调用失败==", res);
             }
           })
-
         },
       })
     }
   },
-
 	/**
 	 * 组件的方法列表
 	 */
@@ -82,6 +77,7 @@ Component({
           const iv = result.iv
           const cloudID = result.cloudID
           const appid = "wx6a2a41fa0eaff2ba"
+          
           const secret = "d30f33c9fc2d3e65aaabf0e73c6994ee"
           console.log("开始解密");
   
